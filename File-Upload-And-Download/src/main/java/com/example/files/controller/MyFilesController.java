@@ -33,5 +33,10 @@ public class MyFilesController {
     public ResponseEntity<ByteArrayResource> downloadFile(@PathVariable String fileName) {
         return service.downloadFile(fileName);
     }
+    @GetMapping("/msg")
+    public String msg() {
+    	return ("<h1>Welcome</h1>");
+    	
+    }
 
 }
